@@ -12,7 +12,7 @@ trait RoutesWithFakeKey
 {
     public function getRouteKey()
     {
-        return App::make(Strategy::class)->encode($this->getKey());
+        return App::get(Strategy::class)->encode($this->getKey());
     }
 
     public function resolveRouteBindingQuery($query, $value, $field = null)
@@ -20,7 +20,7 @@ trait RoutesWithFakeKey
         try {
             return $query->where(
                 $field ?? $this->getRouteKeyName(),
-                App::make(Strategy::class)->decode($this->getKey()),
+                App::get(Strategy::class)->decode($this->getKey()),
             );
         } catch (Throwable) {
             return $query;
