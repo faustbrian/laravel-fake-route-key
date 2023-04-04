@@ -7,10 +7,12 @@ namespace Tests\Fixtures;
 use Illuminate\Database\Eloquent\Model;
 use PreemStudio\FakeRouteKey\Concerns\RoutesWithFakeKey;
 
-/**
- * @internal
- */
-abstract class TestCase extends Model
+final class User extends Model
 {
     use RoutesWithFakeKey;
+
+    /**
+     * @var array<string>|bool
+     */
+    protected $guarded = [];
 }

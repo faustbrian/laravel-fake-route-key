@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Tests\Unit\Strategies;
 
 use Illuminate\Encryption\Encrypter;
-use PreemStudio\FakeRouteKey\Strategies\EncryptionStrategy;
+use PreemStudio\FakeRouteKey\Strategies\EncrypterStrategy;
 
 beforeEach(function (): void {
-    $this->faker = (new EncryptionStrategy(new Encrypter('AAAAAAAAAAAAAAAA')));
+    $this->faker = (new EncrypterStrategy(new Encrypter('AAAAAAAAAAAAAAAA')));
 });
 
 it('should encode a key', function (): void {

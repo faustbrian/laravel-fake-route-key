@@ -7,7 +7,7 @@ namespace PreemStudio\FakeRouteKey\Strategies;
 use Illuminate\Contracts\Encryption\Encrypter;
 use PreemStudio\FakeRouteKey\Contracts\Strategy;
 
-final class EncryptionStrategy implements Strategy
+final class EncrypterStrategy implements Strategy
 {
     public function __construct(private readonly Encrypter $encrypter)
     {
