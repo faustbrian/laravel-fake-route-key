@@ -1,0 +1,26 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#1 \\$abstract of method Illuminate\\\\Contracts\\\\Container\\\\Container\\:\\:make\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Strategies/EncrypterStrategy.php
+
+		-
+			message: "#^Parameter \\#1 \\$payload of method Illuminate\\\\Contracts\\\\Encryption\\\\Encrypter\\:\\:decrypt\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Strategies/EncrypterStrategy.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Strategies/OptimusStrategy.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of method Jenssegers\\\\Optimus\\\\Optimus\\:\\:encode\\(\\) expects int, mixed given\\.$#"
+			count: 1
+			path: src/Strategies/OptimusStrategy.php
