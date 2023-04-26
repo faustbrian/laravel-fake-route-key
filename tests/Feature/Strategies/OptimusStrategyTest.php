@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Strategies;
 
+use BombenProdukt\FakeRouteKey\Strategies\OptimusStrategy;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
-use BombenProdukt\FakeRouteKey\Strategies\OptimusStrategy;
 use Tests\Fixtures\User;
 
 it('should resolve a route model binding', function (): void {

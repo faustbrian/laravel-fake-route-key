@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\FakeRouteKey\Concerns;
 
-use Illuminate\Support\Facades\App;
 use BombenProdukt\FakeRouteKey\Contracts\Strategy;
+use Illuminate\Support\Facades\App;
 use Throwable;
 
 trait RoutesWithFakeKey

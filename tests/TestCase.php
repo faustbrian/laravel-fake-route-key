@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests;
 
+use BombenProdukt\PackagePowerPack\TestBench\AbstractPackageTestCase;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\WithFaker;
-use BombenProdukt\PackagePowerPack\TestBench\AbstractPackageTestCase;
 
 /**
  * @internal

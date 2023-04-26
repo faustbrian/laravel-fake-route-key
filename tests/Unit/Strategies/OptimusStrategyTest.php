@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Strategies;
 
+use BombenProdukt\FakeRouteKey\Strategies\OptimusStrategy;
 use Illuminate\Contracts\Config\Repository;
 use Mockery;
-use BombenProdukt\FakeRouteKey\Strategies\OptimusStrategy;
 
 beforeEach(function (): void {
     $config = Mockery::mock(Repository::class);

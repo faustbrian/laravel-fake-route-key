@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Concerns;
 
-use Illuminate\Support\Facades\App;
 use BombenProdukt\FakeRouteKey\Strategies\EncrypterStrategy;
 use BombenProdukt\FakeRouteKey\Strategies\OptimusStrategy;
+use Illuminate\Support\Facades\App;
 use Tests\Fixtures\User;
 
 it('should encode a key using the [OptimusStrategy]', function (): void {

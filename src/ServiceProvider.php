@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace BombenProdukt\FakeRouteKey;
 
-use Illuminate\Contracts\Config\Repository;
-use Illuminate\Contracts\Foundation\Application;
 use BombenProdukt\FakeRouteKey\Contracts\Strategy;
 use BombenProdukt\PackagePowerPack\Package\AbstractServiceProvider;
+use Illuminate\Contracts\Config\Repository;
+use Illuminate\Contracts\Foundation\Application;
 
 final class ServiceProvider extends AbstractServiceProvider
 {

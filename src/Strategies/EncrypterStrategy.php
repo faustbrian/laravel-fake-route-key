@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\FakeRouteKey\Strategies;
 
-use Illuminate\Contracts\Encryption\Encrypter;
 use BombenProdukt\FakeRouteKey\Contracts\Strategy;
+use Illuminate\Contracts\Encryption\Encrypter;
 
 final class EncrypterStrategy implements Strategy
 {

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace BombenProdukt\FakeRouteKey\Strategies;
 
+use BombenProdukt\FakeRouteKey\Contracts\Strategy;
 use Carbon\Exceptions\InvalidTypeException;
 use Illuminate\Contracts\Config\Repository;
 use Jenssegers\Optimus\Optimus;
-use BombenProdukt\FakeRouteKey\Contracts\Strategy;
 
 final class OptimusStrategy implements Strategy
 {

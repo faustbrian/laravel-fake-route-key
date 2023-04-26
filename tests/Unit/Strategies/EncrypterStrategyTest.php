@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Strategies;
 
-use Illuminate\Encryption\Encrypter;
 use BombenProdukt\FakeRouteKey\Strategies\EncrypterStrategy;
+use Illuminate\Encryption\Encrypter;
 
 beforeEach(function (): void {
     $this->faker = (new EncrypterStrategy(new Encrypter('AAAAAAAAAAAAAAAA')));
