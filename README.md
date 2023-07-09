@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-fake-route-key/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-fake-route-key" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-fake-route-key">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-fake-route-key" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-fake-route-key">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-fake-route-key" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-fake-route-key">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-fake-route-key" alt="License" />
-    </a>
-</p>
 
 ## About Laravel Fake Route Key
 
