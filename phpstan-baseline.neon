@@ -1,0 +1,91 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Parameter \\#1 \\$abstract of method Illuminate\\\\Contracts\\\\Container\\\\Container\\:\\:make\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/ServiceProvider.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/Strategies/EncrypterStrategy.php
+
+		-
+			message: "#^Parameter \\#1 \\$payload of method Illuminate\\\\Contracts\\\\Encryption\\\\Encrypter\\:\\:decrypt\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: src/Strategies/EncrypterStrategy.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/Strategies/OptimusStrategy.php
+
+		-
+			message: "#^Parameter \\#1 \\$value of method Jenssegers\\\\Optimus\\\\Optimus\\:\\:encode\\(\\) expects int, mixed given\\.$#"
+			count: 1
+			path: src/Strategies/OptimusStrategy.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:getJson\\(\\)\\.$#"
+			count: 1
+			path: tests/Feature/Strategies/EncrypterStrategyTest.php
+
+		-
+			message: "#^Cannot call method set\\(\\) on mixed\\.$#"
+			count: 1
+			path: tests/Feature/Strategies/EncrypterStrategyTest.php
+
+		-
+			message: "#^Call to an undefined method PHPUnit\\\\Framework\\\\TestCase\\:\\:getJson\\(\\)\\.$#"
+			count: 1
+			path: tests/Feature/Strategies/OptimusStrategyTest.php
+
+		-
+			message: "#^Cannot call method set\\(\\) on mixed\\.$#"
+			count: 4
+			path: tests/Feature/Strategies/OptimusStrategyTest.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\User\\:\\:getRouteKeyStrategy\\(\\) should return BaseCodeOy\\\\FakeRouteKey\\\\Contracts\\\\Strategy but returns mixed\\.$#"
+			count: 1
+			path: tests/Fixtures/User.php
+
+		-
+			message: "#^Method Tests\\\\Fixtures\\\\User\\:\\:resolveRouteBindingQuery\\(\\) should return Illuminate\\\\Contracts\\\\Database\\\\Eloquent\\\\Builder but returns Illuminate\\\\Contracts\\\\Database\\\\Eloquent\\\\Builder\\|Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 1
+			path: tests/Fixtures/User.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Cannot call method set\\(\\) on mixed\\.$#"
+			count: 5
+			path: tests/Unit/Concerns/RoutesWithFakeKeyTest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$faker\\.$#"
+			count: 4
+			path: tests/Unit/Strategies/EncrypterStrategyTest.php
+
+		-
+			message: "#^Access to an undefined property PHPUnit\\\\Framework\\\\TestCase\\:\\:\\$faker\\.$#"
+			count: 4
+			path: tests/Unit/Strategies/OptimusStrategyTest.php
+
+		-
+			message: "#^Call to an undefined method Mockery\\\\ExpectationInterface\\|Mockery\\\\HigherOrderMessage\\:\\:with\\(\\)\\.$#"
+			count: 3
+			path: tests/Unit/Strategies/OptimusStrategyTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$configRepository of class BaseCodeOy\\\\FakeRouteKey\\\\Strategies\\\\OptimusStrategy constructor expects Illuminate\\\\Contracts\\\\Config\\\\Repository, Mockery\\\\MockInterface given\\.$#"
+			count: 1
+			path: tests/Unit/Strategies/OptimusStrategyTest.php

@@ -1,0 +1,63 @@
+{
+    "name": "basecodeoy/fake-route-key",
+    "description": "A package to easily obfuscate route model binding keys with Laravel.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "fake-route-key"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/fake-route-key",
+    "support": {
+        "issues": "https://github.com/basecodeoy/fake-route-key/issues",
+        "source": "https://github.com/basecodeoy/fake-route-key",
+        "security": "https://github.com/basecodeoy/fake-route-key/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "basecodeoy/crate": "^1.0.0",
+        "illuminate/contracts": "^11.0",
+        "jenssegers/optimus": "^1.1.2"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\FakeRouteKey\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BaseCodeOy\\FakeRouteKey\\ServiceProvider"
+            ]
+        }
+    }
+}
